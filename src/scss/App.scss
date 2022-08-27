@@ -1,0 +1,116 @@
+@import "./var";
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+a {
+  font-weight: 400;
+  color: inherit;
+  text-decoration: inherit;
+}
+a:hover {
+  color: inherit;
+}
+
+.form-control,
+.form-control.is-invalid {
+  &:focus {
+    box-shadow: none;
+  }
+}
+@media (min-width: 1600px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1520px;
+  }
+}
+.addUser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 30px;
+  }
+  .addUser_inner {
+    width: 90%;
+    max-width: 600px;
+  }
+  .toast {
+    color: #fff;
+    background: #ff8484;
+    .toast-header {
+      color: #fff;
+      background: transparent;
+    }
+  }
+}
+.btn.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  box-shadow: none;
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.listingHeader {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .searchField {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    width: 350px;
+    position: relative;
+    z-index: 1;
+    input {
+      border: 1px solid #ccc;
+      border-radius: 0;
+    }
+    button {
+      border: none;
+    }
+    .searchList {
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      background-color: #fff;
+      box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.4);
+      max-height: 290px;
+      overflow-y: auto;
+      ul {
+        list-style: none;
+        li {
+          h5 {
+            margin: 0;
+            font-size: 1rem;
+          }
+          span {
+            font-size: 12px;
+            display: block;
+          }
+          padding: 10px;
+          border-bottom: 1px solid #ededed;
+          cursor: pointer;
+          &:hover {
+            background-color: #ededed;
+          }
+        }
+      }
+    }
+  }
+}

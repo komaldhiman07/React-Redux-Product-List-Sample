@@ -1,0 +1,36 @@
+.dashboard {
+  h1 {
+    font-size: 2rem;
+    color: #3a3a3a;
+    margin-bottom: 1rem;
+  }
+}
+.dashBoardCard {
+  box-shadow: 0px 0px 20px -4px #4c546133;
+  background-color: #fff;
+  border-radius: 6px;
+  max-width: 500px;
+  margin: auto;
+  min-height: 100px;
+  padding: 1.2rem;
+  cursor: pointer;
+  h4 {
+    margin: 0;
+    color: #4a4a4a;
+    font-size: 20px;
+  }
+  .listNumber {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 40px;
+    color: #4a4a4a;
+    span {
+      font-size: inherit;
+      font-weight: 800;
+    }
+    svg {
+      font-size: 0.8em;
+    }
+  }
+}

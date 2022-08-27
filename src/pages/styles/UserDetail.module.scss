@@ -1,0 +1,62 @@
+@import "../../scss/mixins";
+@import "../../scss/var";
+
+.userDetailPage {
+}
+.userProfile {
+  display: flex;
+  gap: 1rem;
+  padding: 10px;
+  img {
+    flex-shrink: 0;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .userName {
+    padding: 10px 0;
+    h4 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      color: $para;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  }
+}
+.userDetail {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.userDetail_single {
+  flex-basis: calc(33% - 8px);
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  .heading {
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    color: #2a2a2a;
+    &::after {
+      content: " -";
+    }
+  }
+  .detail {
+    font-size: 14px;
+    color: #616161;
+  }
+}

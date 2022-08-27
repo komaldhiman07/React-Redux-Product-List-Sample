@@ -1,0 +1,13 @@
+@import "../../scss/mixins";
+@import "../../scss/var";
+.page {
+  .page_inner {
+  }
+  .productImg {
+    img {
+      max-width: 100%;
+    }
+  }
+  .productHeading {
+  }
+}

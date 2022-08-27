@@ -1,0 +1,46 @@
+.filterWrap {
+  display: flex;
+  gap: 2rem;
+}
+.filterList {
+  padding: 3rem 1rem;
+  width: 170px;
+  flex-shrink: 0;
+  form {
+    position: sticky;
+    top: 136px;
+  }
+  .singleField {
+    margin-bottom: 1rem;
+    input[type="number"] {
+      width: 100%;
+    }
+  }
+  .priceFilter {
+    display: flex;
+    gap: 5px;
+  }
+}
+.ProductListPage {
+  flex-grow: 1;
+  h1 {
+    font-size: 2rem;
+    color: #3a3a3a;
+    margin-bottom: 1rem;
+  }
+  .ProductListWrap {
+    margin-top: 2rem;
+  }
+}
+.loadMore {
+  text-align: center;
+  padding: 1rem 0rem 0;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s linear;
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
